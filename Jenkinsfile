@@ -10,8 +10,8 @@ pipeline {
             steps {
                 script {
                     dir('terraform') {
-                        sh "/usr/bin/terraform init"  // Use full path to Terraform
-                        sh "/usr/bin/terraform apply -auto-approve"  // Use full path to Terraform
+                        sh "terraform init"  // Use full path to Terraform
+                        sh "terraform apply -auto-approve"  // Use full path to Terraform
                     }
                 }
             }
